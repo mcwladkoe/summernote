@@ -572,6 +572,9 @@ class WrappedRange {
 
     // const rng = this.wrapBodyInlineWithPara().deleteContents();
     const rng = this;
+    if (childNodes.length > 1) {
+      rng = this.wrapBodyInlineWithPara().deleteContents();
+    }
 
     if (rng.so >= 0) {
       childNodes = childNodes.reverse();
