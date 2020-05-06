@@ -7,7 +7,7 @@
  * Copyright 2013- Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license.
  * 
- * Date: 2020-05-06T13:15Z
+ * Date: 2020-05-06T13:41Z
  * 
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -2478,8 +2478,6 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.fn.ex
   }
 });
 // CONCATENATED MODULE: ./src/js/base/core/range.js
-function _readOnlyError(name) { throw new Error("\"" + name + "\" is read-only"); }
-
 function range_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function range_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -3079,7 +3077,7 @@ var range_WrappedRange = /*#__PURE__*/function () {
       var rng = this;
 
       if (childNodes.length > 1) {
-        rng = (_readOnlyError("rng"), this.wrapBodyInlineWithPara().deleteContents());
+        rng = this.wrapBodyInlineWithPara().deleteContents();
       }
 
       if (rng.so >= 0) {

@@ -571,7 +571,7 @@ class WrappedRange {
     let childNodes = lists.from(contentsContainer.childNodes);
 
     // const rng = this.wrapBodyInlineWithPara().deleteContents();
-    const rng = this;
+    let rng = this;
     if (childNodes.length > 1) {
       rng = this.wrapBodyInlineWithPara().deleteContents();
     }
